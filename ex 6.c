@@ -34,7 +34,7 @@ printf("%d", i);
 
 
 if((0>a)||(a>9)||(0>b)||(b>9)||(0>c)||(c>9)||(0>d)||(d>9)||(0>e)||(e>9)||(0>f)||(f>9)||(0>g)||(g>9)||(0>h)||(h>9)||(i<0)||(i>9)){
-        printf("opção inválida - x");
+        printf("opÃ§Ã£o invÃ¡lida - x");
         return 0;
 }
 
@@ -42,29 +42,29 @@ if((0>a)||(a>9)||(0>b)||(b>9)||(0>c)||(c>9)||(0>d)||(d>9)||(0>e)||(e>9)||(0>f)||
     R1 = verificador1 % 11;
 
 
-             if((R1>2)&& (R1<=9)){
+             if((R1>2)&& (R1<=10)){
 
                  P = 11 - R1;
 
-                printf(" Seu primeiro dígito de verificação é: %d\n", P);
+                printf(" Seu primeiro dÃ­gito de verificaÃ§Ã£o Ã©: %d\n", P);
     }
             else {
                 P = 0;
-                printf(" Seu primeiro dígito de verificação é: %d\n", P);
+                printf(" Seu primeiro dÃ­gito de verificaÃ§Ã£o Ã©: %d\n", P);
     }
 
     verificador2 = 11*a + 10*b + 9*c + 8*d + 7*e + 6*f + 5*g + 4*h + 3*i + 2*P;
     R2 = verificador2 % 11;
 
 
-            if((R2>2) && (R2<=9)){
+            if((R2>2) && (R2<=10)){
 
                 Q = 11 - R2;
-                printf(" Seu segundo dígito de verificação é: %d\n", Q);
+                printf(" Seu segundo dÃ­gito de verificaÃ§Ã£o Ã©: %d\n", Q);
             }
             else{
                 Q = 0;
-                printf(" Seu segundo dígito de verificação é: %d\n", Q);
+                printf(" Seu segundo dÃ­gito de verificaÃ§Ã£o Ã©: %d\n", Q);
             }
 return 0;
 }
